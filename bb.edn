@@ -1,0 +1,7 @@
+{:tasks {slim {:requires ([clojure.edn :as edn])
+               :task (let [deps-edn (edn/read-string (slurp "deps.edn"))
+                           project (-> deps-edn :aliases :neil :project)]
+                       (apply shell "clojure -T:slim"
+                              (concat *command-line-args*
+                                      [":lib" (pr-str (:name project))
+                                       ":version" (pr-str (:version project))])))}}}

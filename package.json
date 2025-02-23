@@ -1,0 +1,7 @@
+{
+  "devDependencies": {
+    "cherry-cljs": "0.3.23",
+    "esbuild": "0.24.0"
+  }
+}
+

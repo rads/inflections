@@ -1,0 +1,18 @@
+{:paths ["src" "resources"]
+ :deps {}
+ :aliases
+ {:neil
+  {:project {:version "0.14.2-SNAPSHOT"
+             :name io.github.rads/inflections}}
+
+  :dev
+  {:extra-deps {org.clojure/clojurescript {:mvn/version "1.11.132"}}}
+
+  :build
+  {:deps {io.github.clojure/tools.build {:mvn/version "0.10.7"}}
+   :ns-default build}
+
+  :slim
+  {:deps {io.github.abogoyavlensky/slim {:mvn/version "0.2.2"}
+          slipset/deps-deploy {:mvn/version "0.2.2"}}
+   :ns-default slim.lib}}}
