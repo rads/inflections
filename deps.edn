@@ -2,7 +2,7 @@
  :deps {}
  :aliases
  {:neil
-  {:project {:version "0.14.2-SNAPSHOT"
+  {:project {:version "0.14.2-1"
              :name io.github.rads/inflections}}
 
   :dev
